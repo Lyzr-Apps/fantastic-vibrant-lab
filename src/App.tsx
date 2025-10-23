@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
+    <div className="min-h-screen bg-gray-500 flex items-center justify-center">
       <style>{`
         @keyframes fadeInUp {
           from {
