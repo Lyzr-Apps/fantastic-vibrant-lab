@@ -20,6 +20,18 @@ function App() {
             opacity: 0.7;
           }
         }
+        @keyframes spotlight-move {
+          0%, 100% {
+            text-shadow: 0 0 30px rgba(59, 130, 246, 1),
+                         0 0 60px rgba(59, 130, 246, 0.7),
+                         0 0 90px rgba(59, 130, 246, 0.4);
+          }
+          50% {
+            text-shadow: 0 0 20px rgba(59, 130, 246, 0.8),
+                         0 0 50px rgba(59, 130, 246, 0.5),
+                         0 0 80px rgba(59, 130, 246, 0.2);
+          }
+        }
         .animate-fade-in-up {
           animation: fadeInUp 1s ease-out;
         }
@@ -32,13 +44,17 @@ function App() {
                        0 0 60px rgba(59, 130, 246, 0.3);
           filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.6));
         }
+        .spotlight-text {
+          animation: spotlight-move 3s ease-in-out infinite;
+          filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.8));
+        }
       `}</style>
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-400 mb-4 animate-fade-in-up spotlight">
-          Ready to Build Something Amazing!
+        <h1 className="text-5xl font-bold text-blue-300 mb-6 animate-fade-in-up spotlight-text">
+          SPOTLIGHT
         </h1>
-        <p className="text-blue-500 text-lg animate-pulse-glow spotlight">
-          React + TypeScript + Tailwind CSS
+        <p className="text-gray-400 text-xl animate-pulse-glow">
+          Ready to Build Something Amazing!
         </p>
       </div>
     </div>
