@@ -51,7 +51,7 @@ function App() {
       `}</style>
       <div className="text-center">
         <h1 className="text-5xl font-bold text-blue-300 mb-6 animate-fade-in-up spotlight-text">
-          SPOTLIGHT
+          GAMER
         </h1>
         <p className="text-gray-400 text-xl animate-pulse-glow">
           Ready to Build Something Amazing!
